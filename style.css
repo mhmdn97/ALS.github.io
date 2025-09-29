@@ -94,3 +94,35 @@ header p {
     line-height: 1.5;
     color: #34495e;
 }
+/* --- تنسيقات إضافية للصفحات الفرعية --- */
+
+/* تصغير حجم العنوان في الصفحات الفرعية قليلاً */
+.subpage-header {
+    font-size: 2.2rem;
+    color: #34495e;
+}
+
+/* تنسيق تذييل الصفحة الفرعية وزر العودة */
+.subpage-footer {
+    padding: 1.5rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 1px solid #ddd;
+}
+
+.back-button:hover {
+    background-color: #e9e9e9;
+    transform: translateY(-1px);
+}
+
