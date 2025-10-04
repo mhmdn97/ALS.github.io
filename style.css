@@ -10,12 +10,30 @@ body {
 }
 
 /* العنوان المتحرك */
-header marquee {
-    font-size: 1.5rem;
-    color: #00ffcc;
-    background: #111;
-    padding: 10px;
+.moving-text {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 24px;
+  color: #222;
+  animation: move 12s linear infinite;
 }
+
+/* حركة من اليمين إلى اليسار */
+@keyframes move {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="moving-text">🌊 أهلاً بك في موقعنا — تحديثات جديدة كل يوم! 🌊</div>
+
+</body>
 
 /* Glitter */
 .glitter {
@@ -139,3 +157,4 @@ footer img {
     width: 40px;
     vertical-align: middle;
 }
+
