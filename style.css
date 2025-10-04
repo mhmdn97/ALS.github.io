@@ -203,39 +203,6 @@ body {
 
 /* ====== قسم المقالات ====== */
 
-header {
-  text-align: center;
-  margin-top: 40px;
-}
-
-header h1 {
-  font-size: 2em;
-  color: #222;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.1em;
-  color: #444;
-  margin-bottom: 20px;
-}
-
-.home-button {
-  display: inline-block;
-  background-color: #e0d6ff;
-  color: #222;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 10px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.home-button:hover {
-  background-color: #c5b2ff;
-}
-
-/* شبكة المقالات */
 .articles-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -307,6 +274,7 @@ footer img {
     width: 40px;
     vertical-align: middle;
 }
+
 
 
 
