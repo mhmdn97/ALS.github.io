@@ -70,6 +70,45 @@ body {
     to { transform: translateY(-5px); }
 }
 
+/* زر الصفحة الرئيسية */
+.home-button {
+    text-align: center;
+    margin: 15px 0;
+}
+.home-button a {
+    background: #ff00ff;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px #ff00ff;
+}
+.home-button a:hover {
+    background: #00ffff;
+    color: #000;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+/* محتوى الصفحات الفرعية */
+.subpage {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #00ffff;
+    margin: 30px auto;
+    width: 70%;
+    padding: 30px;
+    color: #ffcc00;
+}
+.subpage h1 {
+    color: #00ffff;
+    margin-bottom: 20px;
+}
+.subpage p {
+    line-height: 2;
+    font-size: 1.1rem;
+}
+
 /* قسم المحتويات والرسالة */
 .content {
     display: flex;
@@ -132,5 +171,6 @@ footer img {
     width: 40px;
     vertical-align: middle;
 }
+
 
 
