@@ -1,177 +1,141 @@
-/* --- الإعدادات الأساسية --- */
 body {
-    font-family: 'Tajawal', 'Geneva', sans-serif;
-    margin: 0;
-    padding: 2rem;
-    background-image: url('images/background.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    color: #333;
-}
-
-/* --- الحاوية الرئيسية --- */
-.main-container {
-    width: 100%;
-    max-width: 700px;
-    background: rgba(255, 255, 255, 0.75);
-    border-radius: 20px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    overflow: hidden;
-}
-
-header {
-    text-align: center;
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
-    background: rgba(255, 255, 255, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: normal;
-    color: #005a9c; /* أزرق داكن مستوحى من Frutiger Aero */
-}
-
-header p {
-    margin: 0.5rem 0 0 0;
-    color: #34495e;
-}
-
-/* --- قائمة الروابط --- */
-.link-list ul {
-    list-style: none;
+    font-family: "Tahoma", "Arial", sans-serif;
+    background-color: #000033;
+    background-image: url('https://sadhost.neocities.org/images/tiles/starsforever.gif'); ;
+    color: #ffcc00;
     margin: 0;
     padding: 0;
+    line-height: 1.8;
+    text-align: right;
 }
 
-.link-list li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+/* العنوان المتحرك */
+header marquee {
+    font-size: 1.5rem;
+    color: #00ffcc;
+    background: #111;
+    padding: 10px;
 }
 
-.link-list li:last-child {
-    border-bottom: none;
+/* Glitter */
+.glitter {
+    text-align: center;
+    margin: 10px 0;
+}
+.glitter img {
+    width: 200px;
+    height: auto;
 }
 
-.link-list a {
+/* صورة رئيسية */
+.hero {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+.hero img {
+    width: 60%;
+    border: 5px solid #ff00ff;
+}
+.hero h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+    color: #ff6600;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* نص وامض */
+.blink {
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* شبكة الصور */
+.gallery {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 1.5rem;
-    text-decoration: none;
-    color: inherit;
-    transition: background-color 0.3s ease;
+    margin: 20px;
 }
-
-.link-list a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+.gallery .row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
 }
-
-.icon {
+.gallery img {
     width: 60px;
     height: 60px;
-    margin-left: 1.5rem; /* في العربي، margin-left يعطي مسافة على اليمين */
-    flex-shrink: 0;
+    margin: 3px;
+    border: 2px solid #fff;
+    object-fit: cover;
+    animation: float 3s infinite alternate;
+}
+@keyframes float {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-5px); }
 }
 
-.link-text h3 {
-    margin: 0 0 0.25rem 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #005a9c;
+/* قسم المحتويات والرسالة */
+.content {
+    display: flex;
+    margin: 20px;
 }
-
-.link-text p {
-    margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #34495e;
+.sidebar {
+    width: 25%;
+    background: #111;
+    padding: 15px;
+    border: 2px dashed #ff00ff;
 }
-/* --- تنسيقات إضافية للصفحات الفرعية --- */
-
-/* تصغير حجم العنوان في الصفحات الفرعية قليلاً */
-.subpage-header {
-    font-size: 2.2rem;
-    color: #34495e;
+.sidebar h2 {
+    color: #00ffff;
+    margin-bottom: 10px;
 }
-
-/* تنسيق تذييل الصفحة الفرعية وزر العودة */
-.subpage-footer {
-    padding: 1.5rem;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.5);
+.sidebar ul {
+    list-style: none;
+    padding: 0;
 }
-
-.back-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f2f2f2;
-    color: #333;
+.sidebar ul li {
+    margin: 8px 0;
+}
+.sidebar a {
+    color: #ffcc00;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    border: 1px solid #ddd;
+}
+.sidebar a:hover {
+    color: #00ff00;
+    text-decoration: underline;
+}
+.welcome {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 15px;
+    padding: 20px;
+    border: 2px solid #00ffff;
+}
+.welcome h2 {
+    color: #ff6600;
+    margin-bottom: 10px;
 }
 
-.back-button:hover {
-    background-color: #e9e9e9;
-    transform: translateY(-1px);
-}
-/* --- تنسيقات إضافية لمعرض الصور --- */
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    padding: 1.5rem;
+/* القسم الفارغ */
+.extra {
+    min-height: 200px;
+    margin: 20px;
+    border: 2px dotted #ffcc00;
 }
 
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover {
-    transform: scale(1.03);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* يضمن أن الصورة تملأ المساحة دون تشويه */
-    display: block;
-}
-
-.image-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 0.75rem;
+/* التذييل */
+footer {
     text-align: center;
+    padding: 15px;
+    background: #111;
     font-size: 0.9rem;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    border-top: 3px solid #ff00ff;
 }
-
-.gallery-item:hover .image-caption {
-    opacity: 1;
-    transform: translateY(0);
+footer img {
+    width: 40px;
+    vertical-align: middle;
 }
-
-
-
