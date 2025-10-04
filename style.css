@@ -9,7 +9,6 @@ body {
     text-align: right;
 }
 
-/* العنوان المتحرك */
 .moving-text {
   position: absolute;
   white-space: nowrap;
@@ -18,22 +17,11 @@ body {
   animation: move 12s linear infinite;
 }
 
-/* حركة من اليمين إلى اليسار */
 @keyframes move {
-  0% {
-    right: -100%;
-  }
-  100% {
-    right: 100%;
-  }
+  0% { right: -100%; }
+  100% { right: 100%; }
 }
-</style>
-</head>
-<body>
 
-<div class="moving-text">🌊 أهلاً بك في موقعنا — تحديثات جديدة كل يوم! 🌊</div>
-
-</body>
 
 /* Glitter */
 .glitter {
@@ -157,4 +145,5 @@ footer img {
     width: 40px;
     vertical-align: middle;
 }
+
 
