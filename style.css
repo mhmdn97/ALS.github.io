@@ -9,19 +9,6 @@ body {
     text-align: right;
 }
 
-.moving-text {
-  position: absolute;
-  white-space: nowrap;
-  font-size: 24px;
-  color: #222;
-  animation: move 12s linear infinite;
-}
-
-@keyframes move {
-  0% { right: -100%; }
-  100% { right: 100%; }
-}
-
 
 /* Glitter */
 .glitter {
